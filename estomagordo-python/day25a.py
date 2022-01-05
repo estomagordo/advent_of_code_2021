@@ -23,6 +23,8 @@ def solve(lines):
     while True:
         newright = set()
         newdown = set()
+        
+        steps += 1
 
         for y, x in right:
             if x == width-1:
@@ -56,8 +58,6 @@ def solve(lines):
                 down.remove((height-1, x))
             else:
                 down.remove((y-1, x))
-        
-        steps += 1
 
     return steps
 

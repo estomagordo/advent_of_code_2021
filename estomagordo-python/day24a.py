@@ -54,7 +54,7 @@ def solve(instructions):
             for w in range(1, 10):
                 dz = calcfor(w, 0, 0, z, programettes[i][1:])
                 if dz == 0:
-                    return word + str(w)
+                    return int(word + str(w))
         else:
             for w in range(9, 0, -1):
                 dz = calcfor(w, 0, 0, z, programettes[i][1:])
